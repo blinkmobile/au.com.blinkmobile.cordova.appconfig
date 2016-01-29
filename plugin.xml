@@ -22,22 +22,22 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-airwatch-ace"
-    version="1.1.1">
+    version="0.1.1">
     <name>Device</name>
     <description>Cordova Airwatch ACE Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,airwatch,ace</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git</repo>
-    <issue>https://issues.apache.org/jira/browse/CB/component/12320648</issue>
+    <repo>https://github.com/coaic/cordova-plugin-airwatch-ace.git</repo>
+    <issue>https://github.com/coaic/cordova-plugin-airwatch-ace/issues</issue>
 
-    <js-module src="www/airwatch-ace.js" name="device">
+    <js-module src="www/airwatch-ace.js" name="airwatch-ace">
         <clobbers target="device" />
     </js-module>
 
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="Device">
+            <feature name="Airwatch-ACE">
                 <param name="ios-package" value="ACEConfiguration"/>
             </feature>
         </config-file>

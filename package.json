@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apache/cordova-plugin-device"
+    "url": "https://github.com/coaic/cordova-plugin-airwatch-ace.git"
   },
   "keywords": [
     "cordova",
