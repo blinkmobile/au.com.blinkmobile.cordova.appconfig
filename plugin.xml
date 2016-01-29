@@ -30,8 +30,8 @@
     <repo>https://github.com/coaic/cordova-plugin-airwatch-ace.git</repo>
     <issue>https://github.com/coaic/cordova-plugin-airwatch-ace/issues</issue>
 
-    <js-module src="www/airwatch-ace.js" name="airwatch-ace">
-        <clobbers target="airwatch-ace" />
+    <js-module src="www/airwatch-ace.js" name="AirwatchAce">
+        <clobbers target="AirwatchAce" />
     </js-module>
 
     <!-- ios -->

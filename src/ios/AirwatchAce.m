@@ -1,5 +1,5 @@
 //
-//  ACEConfiguration.m
+//  AirwatchAce.m
 //  AirWatch
 //
 //  Created by Shane MacPhillamy on 28/01/2016.
@@ -11,14 +11,34 @@
 #include "TargetConditionals.h"
 
 #import <Cordova/CDV.h>
-#import "ACEConfiguration.h"
+#import "AirwatchAce.h"
 
-@implementation ACEConfiguration
+@implementation AirwatchAce
 
 
 + (NSString*)cordovaVersion
 {
   return CDV_VERSION;
+}
+
+- (void)getAceInfo:(CDVInvokedUrlCommand*)command
+{
+  NSDictionary* aceProperties = [self aceProperties];
+  CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:aceProperties];
+  
+  [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
+- (NSDictionary*)aceProperties
+{
+  NSMutableDictionary* aceProps = [NSMutableDictionary dictionaryWithCapacity:4];
+  
+  [aceProps setObject:@"Apple" forKey:@"manufacturer"];
+  [aceProps setObject:@"iOS" forKey:@"platform"];
+  [aceProps setObject:[[self class] cordovaVersion] forKey:@"cordova"];
+  [aceProps setObject:@([self isVirtual]) forKey:@"isVirtual"];
+  NSDictionary* aceReturn = [NSDictionary dictionaryWithDictionary:aceProps];
+  return aceReturn;
 }
 
 - (BOOL)isVirtual

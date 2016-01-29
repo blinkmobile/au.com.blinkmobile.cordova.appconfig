@@ -1,22 +1,24 @@
 //
-//  ACEConfiguration.h
+//  AirwatchAce.h
 //  AirWatch
 //
 //  Created by Shane MacPhillamy on 28/01/2016.
 //
 //
 
-#ifndef ACEConfiguration_h
-#define ACEConfiguration_h
+#ifndef AirwatchAce_h
+#define AirwatchAce_h
 
 #import <UIKit/UIKit.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface ACEConfiguration : CDVPlugin
+@interface AirwatchAce : CDVPlugin
 {}
 
 + (NSString*)cordovaVersion;
 
+- (void)getAceInfo:(CDVInvokedUrlCommand*)command;
+
 @end
 
-#endif /* ACEConfiguration_h */
+#endif /* AirwatchAce_h */
