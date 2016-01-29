@@ -31,19 +31,19 @@
     <issue>https://github.com/coaic/cordova-plugin-airwatch-ace/issues</issue>
 
     <js-module src="www/airwatch-ace.js" name="airwatch-ace">
-        <clobbers target="device" />
+        <clobbers target="airwatch-ace" />
     </js-module>
 
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="Airwatch-ACE">
-                <param name="ios-package" value="ACEConfiguration"/>
+                <param name="ios-package" value="AirwatchAce"/>
             </feature>
         </config-file>
 
-        <header-file src="src/ios/ACEConfiguration.h" />
-        <source-file src="src/ios/ACEConfiguration.m" />
+        <header-file src="src/ios/AirwatchAce.h" />
+        <source-file src="src/ios/AirwatchAce.m" />
     </platform>
 
 </plugin>
