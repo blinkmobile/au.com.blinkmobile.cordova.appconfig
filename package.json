@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-airwatch-ace",
+  "version": "1.1.1",
+  "description": "Cordova Airwatch ACE Plugin",
+  "cordova": {
+    "id": "cordova-plugin-airwatch-ace",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-plugin-device"
+  },
+  "keywords": [
+    "cordova",
+    "airwatch",
+    "ace",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Shane MacPhillamy",
+  "license": "Apache 2.0"
+}
