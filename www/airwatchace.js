@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-airwatchace.AirwatchAce", function(require, exports, module) { "use strict";
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,6 +18,7 @@ cordova.define("cordova-plugin-airwatchace.AirwatchAce", function(require, expor
  * under the License.
  *
 */
+"use strict";
 
 var argscheck = require('cordova/argscheck'),
     channel = require('cordova/channel'),
@@ -70,5 +70,3 @@ AirwatchAce.prototype.getInfo = function(successCallback, errorCallback) {
 };
 
 module.exports = new AirwatchAce();
-
-});
