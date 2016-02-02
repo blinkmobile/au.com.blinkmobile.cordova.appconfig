@@ -37,7 +37,7 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="Airwatch-ACE">
+            <feature name="AirwatchAce">
                 <param name="ios-package" value="AirwatchAce"/>
             </feature>
         </config-file>

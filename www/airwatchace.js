@@ -1,4 +1,4 @@
-"use strict";
+cordova.define("cordova-plugin-airwatchace.AirwatchAce", function(require, exports, module) { "use strict";
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -25,10 +25,10 @@ var argscheck = require('cordova/argscheck'),
     utils = require('cordova/utils'),
     exec = require('cordova/exec'),
     cordova = require('cordova');
-
-channel.createSticky('onCordovaInfoReady');
-// Tell cordova channel to wait on the CordovaInfoReady event
-channel.waitForInitialization('onCordovaInfoReady');
+               
+channel.createSticky('onAirwatchAceReady');
+// Tell cordova channel to wait on the AirwatchAceReady event
+channel.waitForInitialization('onAirwatchAceReady');
 
 /**
  * This represents the mobile device, and provides properties for inspecting the model, version, UUID of the
@@ -50,7 +50,7 @@ function AirwatchAce() {
             me.version = info.version;
             me.cordova = buildLabel;
             me.isVirtual = info.isVirtual;
-            channel.onCordovaInfoReady.fire();
+            channel.onAirwatchAceReady.fire();
         },function(e) {
             me.available = false;
             utils.alert("[ERROR] Error initializing Cordova: " + e);
@@ -70,3 +70,5 @@ AirwatchAce.prototype.getInfo = function(successCallback, errorCallback) {
 };
 
 module.exports = new AirwatchAce();
+
+});
