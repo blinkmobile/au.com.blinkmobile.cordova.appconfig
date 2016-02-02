@@ -17,7 +17,7 @@
 
 + (NSString*)cordovaVersion;
 
-- (void)getAceInfo:(CDVInvokedUrlCommand*)command;
+- (void)getInfo:(CDVInvokedUrlCommand*)command;
 
 @end
 

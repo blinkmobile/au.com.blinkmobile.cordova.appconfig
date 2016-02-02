@@ -1,16 +1,16 @@
 {
-  "name": "cordova-plugin-airwatch-ace",
+  "name": "cordova-plugin-airwatchace",
   "version": "1.1.1",
   "description": "Cordova Airwatch ACE Plugin",
   "cordova": {
-    "id": "cordova-plugin-airwatch-ace",
+    "id": "cordova-plugin-airwatchace",
     "platforms": [
       "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/coaic/cordova-plugin-airwatch-ace.git"
+    "url": "https://github.com/coaic/cordova-plugin-airwatchace.git"
   },
   "keywords": [
     "cordova",

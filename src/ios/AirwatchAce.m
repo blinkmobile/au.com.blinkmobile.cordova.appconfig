@@ -21,7 +21,16 @@
   return CDV_VERSION;
 }
 
-- (void)getAceInfo:(CDVInvokedUrlCommand*)command
+- (id)init
+{
+  self = [super init];
+  [CDVPluginResult setVerbose:TRUE];
+  return self;
+}
+
+
+
+- (void)getInfo:(CDVInvokedUrlCommand*)command
 {
   NSDictionary* aceProperties = [self aceProperties];
   CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:aceProperties];

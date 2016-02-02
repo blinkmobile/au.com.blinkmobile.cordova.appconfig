@@ -21,16 +21,16 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-airwatch-ace"
+    id="cordova-plugin-airwatchace"
     version="0.1.1">
     <name>Device</name>
     <description>Cordova Airwatch ACE Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,airwatch,ace</keywords>
-    <repo>https://github.com/coaic/cordova-plugin-airwatch-ace.git</repo>
-    <issue>https://github.com/coaic/cordova-plugin-airwatch-ace/issues</issue>
+    <repo>https://github.com/coaic/cordova-plugin-airwatchace.git</repo>
+    <issue>https://github.com/coaic/cordova-plugin-airwatchace/issues</issue>
 
-    <js-module src="www/airwatch-ace.js" name="AirwatchAce">
+    <js-module src="www/airwatchace.js" name="AirwatchAce">
         <clobbers target="AirwatchAce" />
     </js-module>
 

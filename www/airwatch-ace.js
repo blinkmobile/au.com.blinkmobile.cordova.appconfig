@@ -1,3 +1,4 @@
+"use strict";
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -58,14 +59,14 @@ function AirwatchAce() {
 }
 
 /**
- * Get Airwatch ACE info
+ * Get Airwatch info
  *
  * @param {Function} successCallback The function to call when the heading data is available
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
-AirwatchAce.prototype.getAceInfo = function(successCallback, errorCallback) {
+AirwatchAce.prototype.getInfo = function(successCallback, errorCallback) {
     argscheck.checkArgs('fF', 'AirwatchAce.getInfo', arguments);
-    exec(successCallback, errorCallback, "AirwatchAce", "getAceInfo", []);
+    exec(successCallback, errorCallback, "AirwatchAce", "getInfo", []);
 };
 
 module.exports = new AirwatchAce();

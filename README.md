@@ -17,9 +17,9 @@
 #         under the License.
 -->
 
-# cordova-plugin-airwatch-ace
+# cordova-plugin-airwatchace
 
-This plugin defines a global `airwatch-ace` object, which describes the Airwatch MDM Configuration.
+This plugin defines a global `airwatchace` object, which describes the Airwatch MDM Configuration.
 Although the object is in the global scope, it is not available until after the `deviceready` event.
 
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -27,16 +27,16 @@ Although the object is in the global scope, it is not available until after the 
         console.log(device.cordova);
     }
 
-:warning: Report issues on the [Github Issue Tracker](https://github.com/coaic/cordova-plugin-airwatch-ace/issues)
+:warning: Report issues on the [Github Issue Tracker](https://github.com/coaic/cordova-plugin-airwatchace/issues)
 
 
 ## Installation
 
-    cordova plugin add cordova-plugin-airwatch-ace
+    cordova plugin add cordova-plugin-airwatchace
 
 ## Properties
 
-- airwatch-ace.xxxx
+- airwatchace.xxxx
 
 
 ### Supported Platforms
@@ -48,9 +48,9 @@ Although the object is in the global scope, it is not available until after the 
 
     // iOS:     for the provisioned device returns .....
 
-## airwatch-ace.isVirtual
+## airwatchace.isVirtual
 
 whether the device is running on a simulator.
 
-    var isSim = airwatch-ace.isVirtual;
+    var isSim = airwatchace.isVirtual;
 
