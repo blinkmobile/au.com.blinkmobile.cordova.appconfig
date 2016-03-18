@@ -27,23 +27,23 @@
     <description>Cordova Airwatch ACE Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,airwatch,ace</keywords>
-    <repo>https://github.com/coaic/cordova-plugin-airwatchace.git</repo>
-    <issue>https://github.com/coaic/cordova-plugin-airwatchace/issues</issue>
+    <repo>https://github.com/blinkmobile/au.com.blinkmobile.cordova.appconfig.git</repo>
+    <issue>https://github.com/blinkmobile/au.com.blinkmobile.cordova.appconfig/issues</issue>
 
-    <js-module src="www/airwatchace.js" name="AirwatchAce">
+    <js-module src="www/appconfig.js" name="AppConfig">
         <clobbers target="AirwatchAce" />
     </js-module>
 
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="AirwatchAce">
+            <feature name="AppConfig">
                 <param name="ios-package" value="AirwatchAce"/>
             </feature>
         </config-file>
 
-        <header-file src="src/ios/AirwatchAce.h" />
-        <source-file src="src/ios/AirwatchAce.m" />
+        <header-file src="src/ios/AppConfig.h" />
+        <source-file src="src/ios/AppConfig.m" />
     </platform>
 
 </plugin>

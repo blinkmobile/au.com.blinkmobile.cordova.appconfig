@@ -1,16 +1,16 @@
 {
-  "name": "cordova-plugin-airwatchace",
+  "name": "au.com.blinkmobile.cordova.appconfig",
   "version": "1.1.1",
-  "description": "Cordova Airwatch ACE Plugin",
+  "description": "Cordova App Config Community Plugin",
   "cordova": {
-    "id": "cordova-plugin-airwatchace",
+    "id": "au.com.blinkmobile.cordova.appconfig",
     "platforms": [
       "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/coaic/cordova-plugin-airwatchace.git"
+    "url": "https://github.com/blinkmobile/au.com.blinkmobile.cordova.appconfig.git"
   },
   "keywords": [
     "cordova",
