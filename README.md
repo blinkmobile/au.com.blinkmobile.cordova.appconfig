@@ -17,9 +17,9 @@
 #         under the License.
 -->
 
-# cordova-plugin-airwatchace
+# au.com.blinkmobile.cordova.appconfig
 
-This plugin defines a global `airwatchace` object, which describes the Airwatch MDM Configuration.
+This plugin defines a global `AppConfig` object, which describes the App Config Community MDM Configuration.
 Although the object is in the global scope, it is not available until after the `deviceready` event.
 
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -27,16 +27,16 @@ Although the object is in the global scope, it is not available until after the 
         console.log(device.cordova);
     }
 
-:warning: Report issues on the [Github Issue Tracker](https://github.com/coaic/cordova-plugin-airwatchace/issues)
+:warning: Report issues on the [Github Issue Tracker](https://github.com/blinkmobile/au.com.blinkmobile.cordova.appconfig/issues)
 
 
 ## Installation
 
-    cordova plugin add cordova-plugin-airwatchace
+    cordova plugin add au.com.blinkmobile.cordova.appconfig
 
 ## Properties
 
-- airwatchace.xxxx
+- AppConfig.xxxx
 
 
 ### Supported Platforms
@@ -48,9 +48,9 @@ Although the object is in the global scope, it is not available until after the 
 
     // iOS:     for the provisioned device returns .....
 
-## airwatchace.isVirtual
+## AppConfig.isVirtual
 
 whether the device is running on a simulator.
 
-    var isSim = airwatchace.isVirtual;
+    var isSim = AppConfig.isVirtual;
 

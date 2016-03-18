@@ -1,7 +1,8 @@
 //
-//  AirwatchAce.m
-//  AirWatch
+//  AppConfig.m
+//  AppConfig
 //
+//  Retargeted for AppConfig by Shane MacPhillamy 18/01/2016
 //  Created by Shane MacPhillamy on 28/01/2016.
 //
 //
@@ -11,9 +12,9 @@
 #include "TargetConditionals.h"
 
 #import <Cordova/CDV.h>
-#import "AirwatchAce.h"
+#import "AppConfig.h"
 
-@implementation AirwatchAce
+@implementation AppConfig
 
 
 + (NSString*)cordovaVersion

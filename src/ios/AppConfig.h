@@ -6,13 +6,13 @@
 //
 //
 
-#ifndef AirwatchAce_h
-#define AirwatchAce_h
+#ifndef AppConfig_h
+#define AppConfig_h
 
 #import <UIKit/UIKit.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface AirwatchAce : CDVPlugin
+@interface AppConfig : CDVPlugin
 {}
 
 + (NSString*)cordovaVersion;
@@ -21,4 +21,4 @@
 
 @end
 
-#endif /* AirwatchAce_h */
+#endif /* AppConfig_h */
