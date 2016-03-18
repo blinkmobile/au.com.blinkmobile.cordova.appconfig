@@ -1,6 +1,6 @@
 //
-//  AirwatchAce.h
-//  AirWatch
+//  AppConfig.h
+//  AppConfig
 //
 //  Created by Shane MacPhillamy on 28/01/2016.
 //

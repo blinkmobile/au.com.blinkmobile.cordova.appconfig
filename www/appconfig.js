@@ -26,16 +26,16 @@ var argscheck = require('cordova/argscheck'),
     exec = require('cordova/exec'),
     cordova = require('cordova');
                
-channel.createSticky('onAirwatchAceReady');
-// Tell cordova channel to wait on the AirwatchAceReady event
-channel.waitForInitialization('onAirwatchAceReady');
+channel.createSticky('onAppConfigReady');
+// Tell cordova channel to wait on the AppConfigReady event
+channel.waitForInitialization('onAppConfigReady');
 
 /**
  * This represents the mobile device, and provides properties for inspecting the model, version, UUID of the
  * phone, etc.
  * @constructor
  */
-function AirwatchAce() {
+function AppConfig() {
     this.available = false;
     this.version = null;
     this.cordova = null;
@@ -50,7 +50,7 @@ function AirwatchAce() {
             me.version = info.version;
             me.cordova = buildLabel;
             me.isVirtual = info.isVirtual;
-            channel.onAirwatchAceReady.fire();
+            channel.onAppConfigReady.fire();
         },function(e) {
             me.available = false;
             utils.alert("[ERROR] Error initializing Cordova: " + e);
@@ -59,14 +59,14 @@ function AirwatchAce() {
 }
 
 /**
- * Get Airwatch info
+ * Get AppConfig info
  *
  * @param {Function} successCallback The function to call when the heading data is available
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
-AirwatchAce.prototype.getInfo = function(successCallback, errorCallback) {
-    argscheck.checkArgs('fF', 'AirwatchAce.getInfo', arguments);
-    exec(successCallback, errorCallback, "AirwatchAce", "getInfo", []);
+AppConfig.prototype.getInfo = function(successCallback, errorCallback) {
+    argscheck.checkArgs('fF', 'AppConfig.getInfo', arguments);
+    exec(successCallback, errorCallback, "AppConfig", "getInfo", []);
 };
 
-module.exports = new AirwatchAce();
+module.exports = new AppConfig();

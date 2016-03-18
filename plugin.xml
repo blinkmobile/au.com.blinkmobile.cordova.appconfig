@@ -21,24 +21,24 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-airwatchace"
+    id="au.com.blinkmobile.cordova.appconfig"
     version="0.1.1">
-    <name>AirwatchAce</name>
-    <description>Cordova Airwatch ACE Plugin</description>
+    <name>AppConfig</name>
+    <description>Cordova App Config Community Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,airwatch,ace</keywords>
+    <keywords>cordova,appconfig</keywords>
     <repo>https://github.com/blinkmobile/au.com.blinkmobile.cordova.appconfig.git</repo>
     <issue>https://github.com/blinkmobile/au.com.blinkmobile.cordova.appconfig/issues</issue>
 
     <js-module src="www/appconfig.js" name="AppConfig">
-        <clobbers target="AirwatchAce" />
+        <clobbers target="AppConfig" />
     </js-module>
 
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="AppConfig">
-                <param name="ios-package" value="AirwatchAce"/>
+                <param name="ios-package" value="AppConfig"/>
             </feature>
         </config-file>
 
